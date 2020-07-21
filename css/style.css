@@ -46,6 +46,10 @@ header {
     margin-right: 4.2%;
 }
 
+.margin-right--double {
+    margin-right: 8.4%;
+}
+
 .button {
     font-family: 'Roboto Slab', serif;
     font-style: normal;
@@ -95,6 +99,13 @@ button::after {
     margin-bottom: 30px;
 }
 
+.section__title--features,
+.section__title--about,
+.section__title--customers {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
 .section__title--header {
     font-size: 115px;
     line-height: 152px;
@@ -102,7 +113,9 @@ button::after {
     margin-bottom: 10px;
 }
 
-.section__content {
+.section__content,
+.features__content,
+.customers__content {
     font-family: 'Roboto', serif;
     font-style: normal;
     font-weight: 300;
@@ -167,7 +180,71 @@ button::after {
 }
 
 .collage__item {
-    width: 290px;
-    height: 290px;
-    margin-bottom: 1.5%;
+    width: 48%;
+    height: 48%;
+    margin-bottom: 4%;
+}
+
+.collage__item--about {
+    width: 48%;
+    height: 48%;
+    margin-bottom: 4%;
+}
+
+.features,
+.customers {
+    align-items: flex-start;
+}
+
+.features__item,
+.customers__item {
+    width: 24.1%;
+}
+
+.features__item:nth-child(2),
+.customers__item:nth-child(2) {
+    padding: 0 6.5%;
+    border-left: 1px solid rgba(51, 172, 197, 0.5);
+    border-right: 1px solid rgba(51, 172, 197, 0.5);
+}
+
+.features__item:nth-child(2) {
+    padding-bottom: 30px;
+}
+
+.features__desc,
+.customers__desc {
+    margin-top: 60px;
+}
+
+.features__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    /* or 117% */
+    margin-bottom: 30px;
+}
+
+.customers__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.about-list__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.about-list__icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 20px;
 }
