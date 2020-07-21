@@ -3,3 +3,121 @@ body {
     font-family: 'Roboto Slab', serif;
     background-color: #E5E5E5;
 }
+
+header {
+    background-image: url(/img/header_bg.jpg);
+    background-position: center;
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 1305px;
+    margin: 0 auto 160px;
+    color: #000000;
+}
+
+.block-480 {
+    width: 36.8%;
+}
+
+.button {
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 25px 40px;
+    margin-top: 40px;
+    border: 3px solid #FF8E0F;
+    box-sizing: border-box;
+    border-radius: 3px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.button--white {
+    color: #FFFFFF;
+}
+
+button::after {
+    content: "→";
+    font-size: 40px;
+    position: absolute;
+    right: -25px;
+    top: 19px;
+}
+
+.section__desc--header {
+    padding: 155px 0;
+    margin-right: 8.4%;
+}
+
+.section__title {
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    /* or 119% */
+    margin-bottom: 30px;
+}
+
+.section__title--header {
+    font-size: 115px;
+    line-height: 152px;
+    color: #F3E7DE;
+    margin-bottom: 10px;
+}
+
+.section__content {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    /* or 150% */
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.section__content--header {
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    line-height: 35px;
+    /* or 117% */
+    color: #FFFFFF;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.header-main {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-menu {
+    margin: 40px 0;
+    display: flex;
+}
+
+.header-menu li {
+    margin-right: 40px;
+}
+
+.header-menu li:last-child {
+    margin-right: 0;
+}
