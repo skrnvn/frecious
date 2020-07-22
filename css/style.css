@@ -20,6 +20,8 @@ footer {
     max-width: 1305px;
     margin: 0 auto 160px;
     color: #000000;
+    position: relative;
+    z-index: 1;
 }
 
 .container--footer {
@@ -362,4 +364,50 @@ button::after {
 
 .footer-social__link--instagram {
     background-image: url(/img/insta_logo.png);
+}
+
+.section-bg--one {
+    position: absolute;
+    width: 428px;
+    height: 592px;
+    left: -130px;
+    top: -235px;
+    z-index: -1;
+}
+
+.section-bg--two {
+    position: absolute;
+    width: 496px;
+    height: 659px;
+    right: -300px;
+    bottom: -220px;
+    z-index: -1;
+    transform: rotate(-9.26deg);
+}
+
+.section-bg--four {
+    position: absolute;
+    width: 428px;
+    height: 592px;
+    right: -180px;
+    top: -80px;
+    z-index: -1;
+}
+
+.section-bg--five {
+    position: absolute;
+    width: 428px;
+    height: 592px;
+    right: -180px;
+    top: -20px;
+    z-index: -1;
+}
+
+.section-bg--six {
+    position: absolute;
+    width: 371px;
+    height: 342px;
+    left: -300px;
+    top: -320px;
+    z-index: -1;
 }
