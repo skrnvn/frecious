@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frecious</title>
-    <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="/slick/slick.css">
+    <link rel="stylesheet" href="/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -129,6 +131,81 @@
             </li>
         </ul>
     </section>
+    <div class="section-bg--slider">
+        <section class="container container--flex container--slider">
+            <div class="section__desc block-260 margin-left">
+                <h2 class="section__title">
+                    Выбери свой Фрешес
+                </h2>
+                <p class="section__content">
+                    Каждый пакетик - это уникальный вкус
+                </p>
+            </div>
+            <section class="regular slider block-920">
+                <div class="slider__card">
+                    <img class="slider__img" src="/img/slider_img_1.png">
+                    <h4 class="slider__title">
+                        Пряная капуста
+                    </h4>
+                    <p class="slider__content">
+                        В составе этого уникального пюре содержится:красная капуста,кешью,лимон,хрен, морская соль.
+                    </p>
+                    <button class="button">купить сейчас</button>
+                </div>
+                <div class="slider__card">
+                    <img class="slider__img" src="/img/slider_img_2.png">
+                    <h4 class="slider__title">
+                        Сахарный эстрагон
+                    </h4>
+                    <p class="slider__content">
+                        В составе этого уникального пюре содержится:зеленая капуста, кабачок, кешью, лимон, черный перец, морская соль.
+                    </p>
+                    <button class="button">купить сейчас</button>
+                </div>
+                <div class="slider__card">
+                    <img class="slider__img" src="/img/slider_img_3.png">
+                    <h4 class="slider__title">
+                        Садовая морковь
+                    </h4>
+                    <p class="slider__content">
+                        В составе этого уникального пюре содержится:морковь, тыква, куркума, кешью, лимон, морская соль.
+                    </p>
+                    <button class="button">купить сейчас</button>
+                </div>
+                <div class="slider__card">
+                    <img class="slider__img" src="/img/slider_img_1.png">
+                    <h4 class="slider__title">
+                        Пряная капуста
+                    </h4>
+                    <p class="slider__content">
+                        В составе этого уникального пюре содержится:красная капуста,кешью,лимон,хрен, морская соль.
+                    </p>
+                    <button class="button">купить сейчас</button>
+                </div>
+                <div class="slider__card">
+                    <img class="slider__img" src="/img/slider_img_2.png">
+                    <h4 class="slider__title">
+                        Сахарный эстрагон
+                    </h4>
+                    <p class="slider__content">
+                        В составе этого уникального пюре содержится:зеленая капуста, кабачок, кешью, лимон, черный перец, морская соль.
+                    </p>
+                    <button class="button">купить сейчас</button>
+                </div>
+                <div class="slider__card">
+                    <img class="slider__img" src="/img/slider_img_3.png">
+                    <h4 class="slider__title">
+                        Садовая морковь
+                    </h4>
+                    <p class="slider__content">
+                        В составе этого уникального пюре содержится:морковь, тыква, куркума, кешью, лимон, морская соль.
+                    </p>
+                    <button class="button">купить сейчас</button>
+                </div>
+            </section>
+            <img class="section-bg--three" src="/img/carrot_bg.png" alt="">
+        </section>
+    </div>
     <section class="container">
         <h2 class="section__title section__title--about">
             Все что вы должны знать о нас
@@ -290,6 +367,29 @@
             </ul>
         </div>
     </footer>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).on('ready', function() {
+            $(".regular").slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1
+            });
+            $(".variable").slick({
+                dots: true,
+                infinite: true,
+                variableWidth: true
+            });
+            $(".lazy").slick({
+                lazyLoad: 'ondemand', // ondemand progressive anticipated
+                infinite: true
+            });
+        });
+    </script>
 </body>
 
 </html>

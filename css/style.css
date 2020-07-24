@@ -34,6 +34,19 @@ footer {
     align-items: center;
 }
 
+.container--slider {
+    align-items: flex-start;
+    padding: 60px 0;
+}
+
+.block-260 {
+    width: 19.9%;
+}
+
+.block-370 {
+    width: 28.4%;
+}
+
 .block-480 {
     width: 36.8%;
 }
@@ -48,6 +61,10 @@ footer {
 
 .block-590 {
     width: 45.2%;
+}
+
+.block-920 {
+    width: 70.5%;
 }
 
 .margin-left {
@@ -105,6 +122,10 @@ button::after {
     margin-right: 8.4%;
 }
 
+.section__desc--slider {
+    width: 19.9%;
+}
+
 .section__title {
     font-family: 'Roboto Slab', serif;
     font-style: normal;
@@ -131,7 +152,8 @@ button::after {
 
 .section__content,
 .features__content,
-.customers__content {
+.customers__content,
+.slider__content {
     font-family: 'Roboto', serif;
     font-style: normal;
     font-weight: 300;
@@ -385,6 +407,15 @@ button::after {
     transform: rotate(-9.26deg);
 }
 
+.section-bg--three {
+    position: absolute;
+    width: 496px;
+    height: 659px;
+    left: -200px;
+    bottom: -260px;
+    z-index: -1;
+}
+
 .section-bg--four {
     position: absolute;
     width: 428px;
@@ -410,4 +441,29 @@ button::after {
     left: -300px;
     top: -320px;
     z-index: -1;
+}
+
+.section-bg--slider {
+    background-color: #FAFAFA;
+}
+
+.slider__card {
+    text-align: center;
+}
+
+.slider__img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.slider__title {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 20px 0;
 }
